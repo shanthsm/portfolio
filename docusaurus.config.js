@@ -11,7 +11,8 @@ const config = {
   url: 'https://shanthsm.github.io', // Change to your deployment URL
   baseUrl: '/portfolio/', // Change to '/' if deploying to root
   organizationName: 'shanthsm', // GitHub username
-  projectName: 'portfolio', // Repo name
+  projectName: 'portfolio', // Repo name,
+  deploymentBranch: 'gh-pages',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
