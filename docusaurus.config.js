@@ -1,7 +1,3 @@
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
-
-/** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: 'Shanthalingaiah SM',
   tagline: 'Writer Who Codes | Docs Consultant | Content Strategist.',
@@ -31,60 +27,6 @@ module.exports = {
           { tagName: 'meta', name: 'msapplication-TileImage', content: 'img/docusaurus.png' },
           { tagName: 'meta', name: 'msapplication-TileColor', content: '#000' },
         ],
-      },
-    ],
-  ],
-
-  themeConfig: {
-    navbar: {
-      title: 'Shanthalingaiah SM',
-      logo: {
-        alt: 'Site Logo',
-        src: 'img/mob-2.png',
-      },
-      items: [
-        { to: '/blog', label: 'Blog', position: 'left' },
-        {
-          href: 'https://github.com/shanthsm/portfolio',
-          label: 'GitHub',
-          position: 'right',
-        },
-      ],
-    },
-
-    footer: {
-      style: 'light',
-      copyright: `Copyright © ${new Date().getFullYear()} Shanthalingaiah SM. Built with Docusaurus.`,
-    },
-
-    prism: {
-      theme: lightCodeTheme,
-      darkTheme: darkCodeTheme,
-    },
-
-    metadata: [
-      { name: 'robots', content: 'max-image-preview:large' },
-      { name: 'monetization', content: '$ilp.uphold.com/fYPB8Pjyig3z' },
-    ],
-  },
-
-  presets: [
-    [
-      '@docusaurus/preset-classic',
-      {
-        docs: false,
-        blog: {
-          showReadingTime: true,
-          editUrl: 'https://github.com/shanthsm/portfolio/edit/master/',
-          feedOptions: {
-            type: 'all',
-          },
-          postsPerPage: 3,
-          truncateMarker: /<!--\s*(truncate)\s*-->/,
-        },
-        theme: {
-          customCss: require.resolve('./src/css/custom.css'),
-        },
       },
     ],
   ],
